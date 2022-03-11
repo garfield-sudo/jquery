@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form class="search-form">
+      <input id="search" type="search" placeholder="Поиск" />
+    </form>
+
+    <button class="btn btn-zapas">Создать</button>
+    <form class="form">
+      <input class="inp name-inp" type="text" placeholder="Введите имя" />
+      <input
+        class="inp surname-inp"
+        type="text"
+        placeholder="Введите фамилию"
+      />
+      <input class="inp number-inp" type="number" placeholder="Введите номер" />
+      <input
+        class="inp week-inp"
+        type="number"
+        placeholder="Введите недельный KPI"
+      />
+      <input
+        class="inp month-inp"
+        type="number"
+        placeholder="Введите месячный KPI"
+      />
+      <button class="btn">Создать</button>
+    </form>
+    <div class="student-list"></div>
+
+    <div class="modal-edit"></div>
+
+    <div class="pagination"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

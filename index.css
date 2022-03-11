@@ -1,0 +1,147 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  border-radius: 5px;
+  border: 2px solid rgb(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 10px;
+  margin: 0 auto 20px;
+}
+
+.inp {
+  border: 1px solid rgb(7, 7, 6);
+  background-color: rgb(5, 5, 5);
+  border-radius: 20px;
+  height: 30px;
+  margin-bottom: 10px;
+  color: rgb(240, 12, 12);
+  font-weight: bold;
+}
+
+.inp::-webkit-input-placeholder {
+  color: rgb(219, 6, 6);
+}
+
+.student-list {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.student {
+  width: 300px;
+  text-align: center;
+  padding-bottom: 15px;
+  border: 1px solid rgb(12, 12, 12);
+  color: rgb(3, 3, 3);
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.btn-delete {
+  border-color: rgb(10, 10, 10);
+  background-color: rgb(34, 41, 41);
+}
+.btn-edit {
+  border-color: rgb(2, 2, 2);
+  background-color: rgb(34, 41, 41);
+}
+.btn-save {
+  border-color: rgb(21, 22, 22);
+  background-color: rgb(34, 41, 41);
+}
+.btn-escape {
+  border-color: rgb(3, 3, 3);
+  background-color: rgb(34, 41, 41);
+}
+.btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-color: rgb(5, 5, 5);
+  background-color: pink;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(12, 12, 12);
+}
+.btn:hover {
+  background-color: rgb(255, 152, 169);
+  color: white;
+}
+.modal-edit {
+  position: absolute;
+  display: none;
+  left: 40%;
+  top: 45%;
+  flex-direction: column;
+  background-color: pink;
+  width: 300px;
+}
+.inp-modal {
+  border: 1px solid rgb(190, 30, 30);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: rgb(243, 148, 148);
+}
+.student-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(235, 121, 121);
+  border: 1px solid rgb(190, 30, 30);
+  color: white;
+}
+
+.search-form {
+  border-radius: 5px;
+  border: 2px solid rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto 20px;
+}
+#search {
+  width: 100%;
+  height: 50px;
+}
+
+.page-item {
+  color: rgb(0, 23, 66);
+  background-color: rgb(143, 191, 245);
+  font-size: 24px;
+  border: 1px solid rgb(5, 41, 109);
+  text-decoration: none;
+}
+.page-item.active {
+  color: rgb(201, 130, 0);
+}
+
+.pagination {
+  /* background-color: black; */
+  width: 100px;
+  margin: 0 auto;
+}
+.btn-zapas {
+  display: none;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 450px) {
+  .form {
+    display: none;
+  }
+  .btn-zapas {
+    display: block;
+  }
+}
